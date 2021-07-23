@@ -1,3 +1,3 @@
 ## Backoffice condominium management
 
-![Video](condominio.gif)
+![](condominio.gif)
