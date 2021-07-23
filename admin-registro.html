@@ -1,0 +1,162 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+<title>Registro - Arcángel Soluciones</title>
+<!-- Bootstrap Core CSS -->
+<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- animation CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Wizard CSS -->
+<link href="../plugins/bower_components/register-steps/steps.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- color CSS -->
+<link href="css/colors/default.css" id="theme"  rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<!-- Preloader -->
+<div class="preloader">
+  <div class="cssload-speeding-wheel"></div>
+</div>
+<section id="wrapper" class="login-register">
+  <div class="register-box">
+    <div class="">
+       <a href="javascript:void(0)" class="text-center db m-b-20"><img src="../plugins/images/logo-completo.png" alt="Home" style="width: 200px;" /></a>
+      <!-- multistep form -->
+        <form id="msform">
+        <!-- progressbar -->
+        <ul id="eliteregister">
+        <li class="active">Administrador</li>
+        <li>Proyecto</li>
+        <li>Pago</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+        <h2 class="fs-title"><strong>Datos personales del administrador</strong></h2>
+            <div class="row">
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="text" name="nombre" placeholder="Nombre" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="text" name="apellido" placeholder="Apellido" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="text" name="id" placeholder="ID" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="text" name="nombre" placeholder="Teléfono" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="password" name="pass" placeholder="Tipo de habitante" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="password" name="pass" placeholder="Contraseña" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <input type="password" name="cpass" placeholder="Confirmar" />
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                            <div class="form-control" data-trigger="fileinput"> <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div> <span class="input-group-addon btn btn-default btn-file"> <span class="fileinput-new">Foto de perfil</span> <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="..."> </span> <a href="javascript:void(0)" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Quitar</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" name="next" class="next action-button " value="Siguiente" />
+        </fieldset>
+        <fieldset>
+        <h2 class="fs-title"><strong>Datos del proyecto</strong></h2>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <input type="text" name="nombre" placeholder="Nombre del proyecto" />
+            </div>
+            <div class="form-group col-md-6">
+                 <input type="text" name="nombre" placeholder="Cantidad de propiedades" />
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="nombre" placeholder="Cantidad de puestos" />
+            </div>    
+            <div class="form-group col-md-6">
+                <input type="text" name="nombre" placeholder="Dirección" />
+            </div>    
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Anterior" />
+        <input type="button" name="next" class="next action-button" value="Siguiente" />
+        </fieldset>
+        <fieldset>
+        <h2 class="fs-title"><strong>Datos del pago</strong></h2>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <input type="text" name="nombre" placeholder="Titular" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="apellido" placeholder="Banco" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="id" placeholder="ID" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="email" placeholder="N° de verificación" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="nombre" placeholder="Correo" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="nombre" placeholder="Fecha" />
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="nombre" placeholder="Descripción" />
+            </div>
+            <div class="form-group col-md-4">
+                <div class="col-sm-12">
+                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                        <div class="form-control" data-trigger="fileinput"> <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div> <span class="input-group-addon btn btn-default btn-file"> <span class="fileinput-new">Comprobante</span> <span class="fileinput-exists">Cambiar</span>
+                        <input type="file" name="..."> </span> <a href="javascript:void(0)" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Quitar</a> </div>
+                </div>
+            </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Anterior" />
+        <input type="submit" name="submit" class="submit action-button" value="Enviar" />
+        </fieldset>
+        </form>
+        <div class="clear"></div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<script src="../plugins/bower_components/register-steps/jquery.easing.min.js"></script>
+<script src="../plugins/bower_components/register-steps/register-init.js"></script>
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+<!--Style Switcher -->
+<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+</html>

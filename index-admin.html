@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Inicio - Arcángel Soluciones</title>
+        <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <!-- Calendar CSS -->
+    <link href="../plugins/bower_components/calendar/dist/fullcalendar.css" rel="stylesheet" />
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part">
+                    <!-- Logo -->
+                    <a class="logo" href="finanzas-superusuario.html">
+                        <!-- Logo icon image, you can use font-icon also --><b>
+                        <!--This is dark logo icon--><img src="../plugins/images/logo-icono-aa.png" alt="home" class="dark-logo" /><!--This is light logo icon--><img src="../plugins/images/logo-icono-aa.png" alt="home" class="light-logo" />
+                     </b>
+                        <!-- Logo text image you can use text also --><span class="hidden-xs">
+                        <!--This is dark logo text--><img src="../plugins/images/admin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="../plugins/images/logo-letras-index-aa.jpg" alt="home" class="light-logo letras-logo " />
+                     </span> </a>
+                </div>
+                <!-- /Logo -->
+                <!-- Search input and Toggle icon -->
+                <ul class="nav navbar-top-links navbar-left">
+                    <li><a href="javascript:void(0)" class="open-close waves-effect waves-light visible-xs"><i class="ti-close ti-menu"></i></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript:void(0)"> <i class="mdi mdi-gmail"></i>
+                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <ul class="dropdown-menu mailbox animated bounceInDown">
+                            <li>
+                                <div class="drop-title">Tienes 4 mensajes</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="javascript:void(0)">
+                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis ex illo, cumque, quis totam saepe quisquam </span> <span class="time">9:30 AM</span> </div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Sonu Nigam</h5> <span class="mail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis ex illo, cumque</span> <span class="time">9:10 AM</span> </div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Arijit Sinh</h5> <span class="mail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis ex illo</span> <span class="time">9:08 AM</span> </div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>Pavan kumar</h5> <span class="mail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis ex illo, cumque</span> <span class="time">9:02 AM</span> </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="chat.html"> <strong>Ver todos los mensajes</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript:void(0)"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                            <li>
+                                <div class="dw-user-box">
+                                    <div class="u-img"><img src="../plugins/images/users/varun.jpg" alt="user" /></div>
+                                    <div class="u-text">
+                                        <h4>Steave Jobs</h4>
+                                        <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-purple-dark btn-sm">Ver perfil</a></div>
+                                </div>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="configuracion-admin.html"><i class="ti-settings"></i> Configuración</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Cerrar sesión</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Menú</span></h3> </div>
+                <ul class="nav" id="side-menu">
+                    <li class="user-pro">
+                        <a href="javascript:void(0)" class="waves-effect"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Steve Gection<span class="fa arrow"></span></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a href="configuracion-admin.html"><i class="ti-settings"></i> <span class="hide-menu">Configuración</span></a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span class="hide-menu">Cerrar sesión</span></a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="index-admin.html" class="waves-effect"><i  class="mdi mdi-home fa-fw"></i> <span class="hide-menu"></span></a> </li>
+                    <li class="devider"></li>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="mdi mdi-cash fa-fw" data-icon="v"></i> <span class="hide-menu"> Finanzas <span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">4</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="balance-finanzas-admin.html"></i><span class="hide-menu">Balance</span></a> </li>
+                            <li> <a href="cuentas-finanzas-admin.html"><span class="hide-menu">Cuentas</span></a> </li>
+                            <li> <a href="cuotas-finanzas-admin.html"><span class="hide-menu">Cuotas</span></a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="proovedores-admin.html" class="waves-effect"><i  class="mdi mdi-clipboard-text fa-fw"></i> <span class="">Proovedores</span></a> </li>
+                    <li> <a href="areas-admin.html" class="waves-effect"><i  class="mdi mdi-tree fa-fw"></i>Áreas comunes<span class="hide-menu"></span></a> </li>
+                    <li> <a href="parqueos-admin.html" class="waves-effect"><i  class="mdi mdi-car fa-fw"></i>Parqueos<span class="hide-menu"></span></a> </li>
+                    <li class="devider"></li>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="mdi mdi-account-multiple fa-fw" data-icon="v"></i> <span class="hide-menu"> Social <span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">4</span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="incidencias-social-admin.html"></i><span class="hide-menu">Incidencias</span></a> </li>
+                            <li> <a href="vecinos-social-admin.html"><span class="hide-menu">Vecinos</span></a> </li>
+                            <li> <a href="encuestas-social-admin.html"><span class="hide-menu">Encuestas</span></a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Inicio</h4> </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- .row -->
+                <!-- ============================================================== -->
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-4">
+                        <div class="white-box bg-theme">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="m-b-0 font-medium">AGREGAR FACTURA</h2>
+                                    <a href="cuentas-finanzas-admin.html"><h5 class="text-white m-t-0">Ver más cuentas por pagar</h5></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" data-target="#index-factura"><i class="fa fa-plus"></i> </button>
+                                    <div class="modal fade" id="index-factura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="exampleModalLabel1">Nuevo</h4> </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Nombre:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">ID:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Descripción:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Nº de Factura:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Monto:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Plazos:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1"> </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white-box bg-dark">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="m-b-0 font-medium text-white">GENERAR CONDOMINIO</h2>
+                                    <a href="cuentas-finanzas-admin.html"><h5 class="text-muted m-t-0">Ver lista</h5></a>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" data-target="#index-condominio"><i class="fa fa-plus"></i> </button>
+                                    <div class="modal fade" id="index-condominio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="exampleModalLabel1">Nuevo</h4> </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="recipient-name" class="control-label ">Descripción:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Monto:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="recipient-name" class="control-label">Nº de factura:</label>
+                                                                <input type="text" class="form-control" id="recipient-name1">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-sm-8">
+                        <div class="white-box">
+                            <h3 class="box-title">INFORMES</h3>
+                            <div class="comment-center p-t-10">
+                                <div class="comment-body">
+                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"></div>
+                                    <div class="mail-contnet">
+                                        <h5>Pavan kumar</h5><span class="time">10:20 AM   20  may 2016</span> <span class="label label-rouded label-warning">PENDIENTE</span>
+                                        <br/><span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. Aenean commodo dui pellentesque molestie feugiat</span> <a href="javacript:void(0)" class="btn btn btn-rounded btn-default btn-outline m-r-5"><i class="ti-check text-success m-r-5"></i>Recibido</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- ============================================================== -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel">
+                            <div class="panel-heading">VISITAS DE HOY</div>
+                            <div class="table-responsive">
+                                <table class="table table-hover manage-u-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Responsable</th>
+                                            <th>Visita</th>
+                                            <th>Puesto</th>
+                                            <th>Hora</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Daniel Kristeen</td>
+                                            <td>Abraham Giménez</td>
+                                            <td>A12</td>
+                                            <td>3:00pm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="white-box">
+                            <h3 class="box-title">ENCUESTA</h3>
+                            <div id="morris-donut-chart" style="height:318px; padding-top: 50px;"></div>
+                            <div class="row p-t-30">
+                                <div class=" p-t-30">
+                                    <h3 class="font-medium">Nombre</h3>
+                                    <a href="encuestas-social-admin-html"><h5 class="text-muted m-t-0">Ver encuestas y votaciones</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel">
+                            <div class="panel-heading">INCIDENCIAS</div>
+                            <div class="panel-body">
+                                <div class="steamline">
+                                    <div class="sl-item">
+                                        <div class="sl-left bg-success"> <i class="ti-user"></i></div>
+                                        <div class="sl-right">
+                                            <div><a href="#">Tohnathan Doe</a> <span class="sl-date">5 minutes ago</span></div>
+                                            <div class="desc">Contrary to popular belief</div>
+                                        </div>
+                                    </div>
+                                    <div class="sl-item">
+                                        <div class="sl-left bg-info"><i class="fa fa-image"></i></div>
+                                        <div class="sl-right">
+                                            <div><a href="#">Hritik Roshan</a> <span class="sl-date">5 minutes ago</span></div>
+                                            <div class="desc">Lorem Ipsum is simply dummy</div>
+                                            <div class="row inline-photos">
+                                                <div class="col-xs-4"><img class="img-responsive" alt="user" src="../plugins/images/small/vd1.jpg"></div>
+                                                <div class="col-xs-4"><img class="img-responsive" alt="user" src="../plugins/images/small/vd2.jpg"></div>
+                                                <div class="col-xs-4"><img class="img-responsive" alt="user" src="../plugins/images/small/vd3.jpg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sl-item">
+                                        <div class="sl-left"> <img class="img-circle" alt="user" src="../plugins/images/users/sonu.jpg"> </div>
+                                        <div class="sl-right">
+                                            <div><a href="#">Gohn Doe</a> <span class="sl-date">5 minutes ago</span></div>
+                                            <div class="desc">The standard chunk of ipsum </div>
+                                        </div>
+                                    </div>
+                                    <div class="sl-item">
+                                        <div class="sl-left"> <img class="img-circle" alt="user" src="../plugins/images/users/ritesh.jpg"> </div>
+                                        <div class="sl-right">
+                                            <div><a href="#">Varun Dhavan</a> <span class="sl-date">5 minutes ago</span></div>
+                                            <div class="desc">Contrary to popular belief</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row -->
+                <!-- ============================================================== -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <h3 class="box-title ">COBROS POR CONCILIAR</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nº</th>
+                                            <th>Descripción</th>
+                                            <th>Propietario</th>
+                                            <th>Nº de factura</th>
+                                            <th>ID</th>
+                                            <th>Monto</th>
+                                            <th>Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>213</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Juan Túa</td>
+                                            <td>637982</td>
+                                            <td>23756394</td>
+                                            <td>100.000 bs</td>
+                                            <td>
+                                                <!-- Conciliar modal content -->
+                                                <div id="conciliar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                <h4 class="modal-title">Conciliar</h4> </div>
+                                                            <div class="modal-body">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <div class="radio radio-success">
+                                                                            <input type="radio" name="radio1" id="radio1" value="option1" checked="none">
+                                                                            <label for="radio1"> Confirmar </label>
+                                                                        </div>
+                                                                        <div class="radio radio-danger">
+                                                                            <input type="radio" name="radio2" id="radio2" value="option2" checked="">
+                                                                            <label for="radio2"> Denegar </label>
+                                                                        </div>
+                                                                        <label for="recipient-name" class="control-label">Nota</label>
+                                                                        <textarea type="text" id="recipient-name" class="col-xs-12"> </textarea>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary waves-effect" data-dismiss="modal">Guardar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-5"  alt="default" data-toggle="modal" data-target="#conciliar"><i class="ti-pencil-alt"></i></button>
+
+                                                <!-- Ver modal content -->
+                                                <div id="ver-cobrar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                            <h4 class="modal-title" id="myModalLabel">Datos del pago</h4> 
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <h4>Nombre del titular</h4><p>Omar Túa</p>
+                                                                                    <h4>Cédula del títular</h4><p>394283740932</p>
+                                                                                    <h4>Nº de Verificación</h4><p>453543</p>
+                                                                                    <h4>Comprobante</h4><button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-20"><i class="ti-upload"></i></button>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <h4>Fecha</h4><p>12-23-2010</p>
+                                                                                    <h4>Nº de cuenta</h4><p>394283740932</p>
+                                                                                    <h4>Correo</h4><p>omar@hsdk.com</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                                                                        </div>
+                                                                    </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-5" alt="default" data-toggle="modal" data-target="#ver-cobrar"><i class="ti-eye"></i></button>
+
+                                                <!-- Eliminar modal content -->
+                                                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                <h4 class="modal-title" id="mySmallModalLabel">Eliminar proyecto</h4> </div>
+                                                            <div class="modal-body"> ¿Está seguro que quiere eliminar? </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger waves-effect" data-dismiss="modal">Eliminar</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.modal -->
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-5" alt="default" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="ti-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="white-box">
+                            <h3 class="box-title">Reservas pendientes</h3>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="m-t-20">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="waves-effect waves-light">
+                                            <p><i class="fa fa-circle text-info"></i>  Omar túa <strong> ID: 23836287</strong></p>
+                                            <p class="text-info"><strong>Área: Salón de fiestas</strong></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="m-t-20">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="waves-effect waves-light">
+                                            <p><i class="fa fa-circle text-info"></i>  Omar túa <strong> ID: 23836287</strong></p>
+                                            <p class="text-info"><strong>Área: Salón de fiestas</strong></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="m-t-20">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="waves-effect waves-light">
+                                            <p><i class="fa fa-circle text-info"></i>  Omar túa <strong> ID: 23836287</strong></p>
+                                            <p class="text-info"><strong>Área: Salón de fiestas</strong></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="m-t-20">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="waves-effect waves-light">
+                                            <p><i class="fa fa-circle text-info"></i>  Omar túa <strong> ID: 23836287</strong></p>
+                                            <p class="text-info"><strong>Área: Salón de fiestas</strong></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="white-box">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BEGIN MODAL -->
+                <div class="modal fade none-border" id="my-event">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"><strong>Añadir evento</strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-6">
+                                    <h4>Propietario</h4><p>Omar Túa</p>
+                                    <h4>ID</h4><p>39428374</p>
+                                    <h4>Nº de Verificación</h4><p>453543</p>
+                                    <h4>Comprobante</h4><button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-20"><i class="ti-upload"></i></button>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Descripción</h4><p>Reuninón</p>
+                                    <h4>Fecha</h4><p>12-23-2010</p>
+                                    <h4>Área</h4><p>Salón de fiestas</p>
+                                    <h4>Horario</h4><p>De 5pm a 10pm</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white waves-effect" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success save-event waves-effect waves-light">Crear evento</button>
+                                <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Borrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Add Category -->
+                <div class="modal fade none-border" id="add-new-event">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"><strong>Confirmar</strong> evento</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4>Propietario</h4><p>Omar Túa</p>
+                                            <h4>ID</h4><p>39428374</p>
+                                            <h4>Nº de Verificación</h4><p>453543</p>
+                                            <h4>Comprobante</h4><button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-20"><i class="ti-upload"></i></button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Descripción</h4><p>Reuninón</p>
+                                            <h4>Fecha</h4><p>12-23-2010</p>
+                                            <h4>Área</h4><p>Salón de fiestas</p>
+                                            <h4>Horario</h4><p>De 5pm a 10pm</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success waves-effect waves-light save-category" data-dismiss="modal">Aceptar</button>
+                                <button type="button" class="btn btn-danger waves-effect" data-dismiss="modal">Denegar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL -->
+                <!-- ============================================================== -->
+            
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> Todos los derechos reservados &copy; 2019 Soluciones Arcángel </footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="../plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+    <!-- Calendar JavaScript -->
+    <script src="../plugins/bower_components/calendar/jquery-ui.min.js"></script>
+    <script src="../plugins/bower_components/moment/moment.js"></script>
+    <script src='../plugins/bower_components/calendar/dist/fullcalendar.min.js'></script>
+    <script src="../plugins/bower_components/calendar/dist/jquery.fullcalendar.js"></script>
+    <script src="../plugins/bower_components/calendar/dist/cal-init.js"></script>
+    <!-- Flot Charts JavaScript -->
+    <script src="../plugins/bower_components/flot/jquery.flot.js"></script>
+    <script src="../plugins/bower_components/flot/jquery.flot.pie.js"></script>
+    <script src="../plugins/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="js/flot-data.js"></script>
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>
